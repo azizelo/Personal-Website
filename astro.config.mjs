@@ -1,10 +1,9 @@
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
+import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  integrations: [tailwind()],
+  site: 'https://azizelo.github.io/Personal-Website/',
   base: '/Personal-Website/',
-  build: {
-    outDir: 'dist',
-  },
+  integrations: [tailwind()],
+  output: 'static'
 });
