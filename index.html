@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Aziz El Ouaqid — Technologist. Builder. Advisor.</title><!-- Open Graph / Facebook --><meta property="og:title" content="Aziz El Ouaqid — Technologist. Builder. Advisor."><meta property="og:description" content="Blending deep tech and human insight to support innovation, mentorship, and meaningful impact.."><meta property="og:image" content="/og-image.png"><meta property="og:url" content="https://azizelo.github.io/personal-site/"><meta property="og:type" content="website"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Aziz El Ouaqid — Technologist. Builder. Advisor."><meta name="twitter:description" content="Blending deep tech and human insight to support innovation, mentorship, and meaningful impact."><meta name="twitter:image" content="/og-image.png"><link rel="icon" href="/favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/Personal-Website/_astro/_slug_.C5ktz5fJ.css"></head> <body class="scroll-smooth snap-y snap-proximity bg-[#FAF7F2] font-sans text-[#2D3142] overflow-x-hidden"> <header id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-4 py-3 text-white"> <div class="flex items-center justify-between w-full max-w-7xl mx-auto"> <!-- Logo and Tagline --> <div class="flex items-center gap-4"> <a href="/" class="flex items-center gap-2"> <img src="/elouaqid-logo.png" alt="Logo" class="h-10 w-auto object-contain"> <div> <h1 class="text-lg sm:text-xl font-bold">Aziz El Ouaqid</h1> <p class="text-xs sm:text-sm opacity-80">Technologist. Builder. Advisor.</p> </div> </a> </div> <!-- Desktop Nav --> <nav class="hidden sm:flex gap-6 text-sm font-medium ml-auto"> <a href="/#top" class="hover:text-yellow-600 transition">Home</a> <a href="/#about" class="hover:text-yellow-600 transition">About</a> <a href="/#founders" class="hover:text-yellow-600 transition">Founders</a> <a href="/#blog" class="hover:text-yellow-600 transition">Blog</a> <a href="/#mentoring" class="hover:text-yellow-600 transition">Mentoring</a> </nav> <!-- Mobile Hamburger --> <button id="menu-toggle" class="sm:hidden text-3xl ml-auto focus:outline-none">☰</button> </div> <!-- Mobile Nav Menu --> <div id="mobile-menu" class="sm:hidden hidden flex flex-col gap-4 text-sm font-medium px-4 py-6 mt-2 bg-white/90 backdrop-blur-md text-[#2D3142] shadow-md rounded-lg"> <a href="/#top" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a> <a href="/#about" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a> <a href="/#founders" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Founders</a> <a href="/#blog" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Blog</a> <a href="/#mentoring" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Mentoring</a> </div> <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('site-header');
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (!entry.isIntersecting) {
+                        header.classList.add('backdrop-blur-md', 'bg-white/10');
+                        header.classList.remove('text-white');
+                    } else {
+                        header.classList.remove('backdrop-blur-md', 'bg-white/10');
+                        header.classList.add('text-white');
+                    }
+                },
+                { threshold: 0.1 }
+            );
+
+            const hero = document.getElementById('top');
+            if (hero) observer.observe(hero);
+
+            const toggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('mobile-menu');
+            toggle?.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script> </header> <main>   <section id="top" class="snap-start relative h-screen overflow-hidden"> <img src="/moroccantea.webp" alt="Hero Background" class="absolute inset-0 w-full h-full object-cover object-[center_60%] z-0"> <div class="absolute inset-0 bg-black/40 z-10"></div> <div class="relative z-20 w-full h-full flex flex-col justify-end"> <a href="#about" class="mb-6 flex justify-center text-sm text-white/80 hover:text-white animate-bounce z-10">
+▼ About Me
+</a> </div> </section>  <section id="about" class="snap-start relative min-h-screen px-4 py-20 bg-[#FAF7F2] border-t border-[#e4e0db]"> <div class="prose prose-neutral max-w-prose mx-auto space-y-6 text-base sm:text-lg leading-relaxed"> <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">About Me</h2> <p>
+I’m a builder at heart. Over the past two decades, I’ve had the privilege of working on foundational
+        technologies—
+        from <a href="https://en.wikipedia.org/wiki/Exchange_ActiveSync" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">ActiveSync</a>,
+<a href="https://azure.microsoft.com/en-us/products/ai-services/ai-speech" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">speech recognition</a>,
+        and <a href="https://www.microsoft.com/en-us/windows" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Windows</a> at Microsoft,
+        to <a href="https://www.facebook.com/marketplace/" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">Marketplace at Meta</a>,
+        and more recently, <a href="https://www.nightfall.ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:text-blue-800">AI-powered data protection at Nightfall</a>.
+</p> <p>My career has taken me from Morocco to the heart of Silicon Valley, and I’ve learned that the most meaningful
+        progress happens when deep technology meets human empathy. I’m driven by impact—solving problems that matter, at
+        scale.</p> <p>I’ve led product and engineering teams in large companies, currently learning and enjoying the thrills of small
+        startups. I have learned from and collaborated with incredible people along the way. Above
+        all, I consider myself a hands-on builder and a lifelong learner, energized by what’s next and grounded in the
+        belief that big things
+        start small.</p> <p>Whether mentoring, building, or investing, I aim to empower others to lead boldly, build wisely, and never wait
+        for permission to make a difference.</p> </div> <a href="#founders" class="absolute bottom-6 left-0 w-full flex justify-center text-sm text-gray-500 hover:text-[#2D3142] animate-bounce z-10">▼
+      Let's build together</a> </section>  <section id="founders" class="snap-start relative min-h-screen px-4 py-28 bg-white border-t border-[#e4e0db]"> <div class="prose prose-neutral max-w-prose mx-auto space-y-6 text-base sm:text-lg leading-relaxed"> <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">For Founders & Builders</h2> <p>I love optimizing and scaling large products as well as working with early-stage founders and product teams who
+        are building bold, meaningful solutions.</p> <p>I bring experience across deep tech, scaled systems, and startup execution. If you're building something that
+        blends innovation with sustainable social impact, let's connect. I’m especially drawn
+        to ventures that adapt technology and innovation to emerging and underserved markets — particularly across
+        Morocco, Africa, and
+        the Middle East.</p> </div> <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10 px-4"> <a href="https://www.linkedin.com/in/elouaqid/" target="_blank" rel="noopener noreferrer" class="px-6 py-2 text-sm border border-yellow-600 text-yellow-600 rounded-full hover:bg-yellow-600 hover:text-white transition-transform hover:scale-105 duration-200 ease-in-out text-center w-full sm:w-auto">Let’s
+        connect on LinkedIn</a> <a href="#" onclick="if (window.Calendly) { Calendly.initPopupWidget({url: 'https://calendly.com/azizelo/30min'}); } else { alert('Calendly is still loading, please try again.'); } return false;" class="px-6 py-2 text-sm border border-yellow-600 text-yellow-600 rounded-full hover:bg-yellow-600 hover:text-white transition-transform hover:scale-105 duration-200 ease-in-out text-center w-full sm:w-auto">Schedule
+        a 1:1 chat</a> </div> <a href="#blog" class="absolute bottom-6 left-0 w-full flex justify-center text-sm text-gray-500 hover:text-[#2D3142] animate-bounce z-10">▼
+      Reflections</a> </section>  <section id="blog" class="snap-start relative min-h-screen px-4 py-28 bg-[#FAF7F2] border-t border-[#e4e0db]"> <div class="prose prose-neutral max-w-prose mx-auto space-y-6 text-base sm:text-lg leading-relaxed text-center"> <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Ideas & Insights</h2> <div "space-y-4"> <p>I started writing publicly to reflect on the journey that
+          shaped me — from Morocco to Microsoft, from engineering to leadership, and from quietly building to mentoring
+          and giving back.</p> <p>This blog isn’t about being an expert. It’s about being real. I believe that sharing our stories — especially
+          the messy, in-between parts — helps others feel less alone, and reminds us that growth isn’t linear.</p> <p>Whether you're an aspiring engineer, a founder figuring things out, or simply someone who’s ever felt like
+          they
+          didn’t quite belong, I hope you’ll find something here that resonates.</p> <p>My only goal is to contribute with intention. And if even one post helps someone take their next step with
+          confidence, then it’s already worth it.</p> </div> <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 text-left pt-8"> <div class="col-span-full text-center text-gray-500 text-base sm:text-lg">
+I’ll be writing soon — stay tuned for reflections on tech, leadership, and impact.
+</div> </div> </div> <a href="#mentoring" class="absolute bottom-6 left-0 w-full flex justify-center text-sm text-gray-500 hover:text-[#2D3142] animate-bounce z-10">▼
+      Let's Connect</a> </section>  <section id="mentoring" class="snap-start relative min-h-screen px-4 py-28 bg-white border-t border-[#e4e0db]"> <div class="prose prose-neutral max-w-prose mx-auto space-y-6 text-base sm:text-lg leading-relaxed"> <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">Let’s Connect</h2> <p>
+I believe that sometimes, all it takes is a quick conversation to unlock a fresh perspective, open a door, or
+        give someone the confidence to keep going. I’ve been lucky to learn from people who generously shared their time
+        and insights — and I’d love to do the same.
+</p> <p>
+Whether you're exploring your next step, building something new, or just curious about how things work, I'm here
+        for it. If my experience navigating tech, startups, or making an impact resonates with where you’re headed,
+        don’t hesitate to reach out.
+</p> <p>
+No pressure. No ego. Just a conversation with someone who’s been in your shoes and wants to help where it makes
+        sense.
+</p> </div> <!-- CTA Buttons --> <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10 px-4"> <a href="https://www.linkedin.com/in/elouaqid/" target="_blank" rel="noopener noreferrer" class="px-6 py-2 text-sm border border-yellow-600 text-yellow-600 rounded-full hover:bg-yellow-600 hover:text-white transition-transform hover:scale-105 duration-200 ease-in-out text-center w-full sm:w-auto">
+Reach out on LinkedIn
+</a> <a href="#" onclick="if (window.Calendly) { Calendly.initPopupWidget({url: 'https://calendly.com/azizelo/30min'}); } else { alert('Calendly is still loading, please try again.'); } return false;" class="px-6 py-2 text-sm border border-yellow-600 text-yellow-600 rounded-full hover:bg-yellow-600 hover:text-white transition-transform hover:scale-105 duration-200 ease-in-out text-center w-full sm:w-auto">Set
+        up a time to talk
+</a> </div> </section>  </main> <footer class="w-full text-center text-sm text-gray-500 py-6 bg-transparent">
+© 2025 El Ouaqid. All rights reserved.
+</footer> <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              navLinks.forEach(link => {
+                link.classList.toggle('text-yellow-600', link.getAttribute('href') === `#${entry.target.id}`);
+              });
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      sections.forEach(section => observer.observe(section));
+    });
+  </script> <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script> </body> </html>
