@@ -7,6 +7,7 @@ build/
 
 # Astro specific
 *.astro/types.d.ts
+data-store.json
 
 # Logs
 npm-debug.log*
