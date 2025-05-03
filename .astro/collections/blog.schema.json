@@ -10,13 +10,48 @@
         "description": {
           "type": "string"
         },
+        "pubDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "category": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "coverImage": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
         "$schema": {
           "type": "string"
         }
       },
       "required": [
         "title",
-        "description"
+        "description",
+        "pubDate"
       ],
       "additionalProperties": false
     }
