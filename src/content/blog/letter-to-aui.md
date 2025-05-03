@@ -33,13 +33,13 @@ When I look back at my time at Al Akhawayn University, I realize how many of my 
 
 Many of them had the credentials and opportunities to build careers abroad, yet they chose to invest their talents at home — in us, in Morocco’s future.
 
-Today, after working side by side with graduates and PhDs from Harvard, MIT, Stanford, and hunderds of other top tier universities in the World, I can say this with full conviction:
+Today, after managing, working side by side with, and reporting to graduates and PhDs from Harvard, MIT, Stanford, and hunderds of other top tier universities in the World, I can say this with full conviction:
 
 > **You have every bit as much potential to positively impact the World as any of your global peers -- You do not need additional credentials.**
 
-Early in my career, I used to be intimidated by graduates from elite institutions.  They seemed to be conditioned to believe they are among the best — and that belief often becomes a powerful, self-fulfilling prophecy.  In our Moroccan culture, this may come across as pretentious or even as arrogance.
+Early in my career, I used to be intimidated by graduates from elite institutions.  They seemed to be conditioned to believe they are among the best — a powerful, self-fulfilling prophecy.  I had to learn how to speak up for my work and use the word I, a foreign concept for me at the time.  In our Moroccan culture, this used to be frouned upon and may come across as pretentious or even as arrogant.
 
-But there is difference between arrogance and confidence. The confidence of walking into any room and assuming that you belong, assuming that you can lead, and assuming that you can change the world, while remaining humble.
+But there is a difference between arrogance and confidence. The confidence of walking into any room and assuming that you belong, assuming that you can lead, and assuming that you can change the world.  There are always going to be unknowns and you have already proven, through your academic work and work ethics that you can continue to relentlessly chip at that unknown, one milestone at a time. Just think back on how far you've come since you graduated high school!
 
 At AUI, you are fortunate to come from an institution that has established itself with distinction in Morocco and across Africa — a place that champions global thinking, critical inquiry, and leadership.
 
@@ -52,7 +52,7 @@ When you carry forward your curiosity, resilience, and hard-earned skills, you s
 Three qualities have stood out to me across all the people I've admired and worked with:
 
 - **They all aspire to build things greater than themselves.**  
-Not chasing salaries, titles, accolades, promotions or quick social validation — but striving to create work that leaves a positive mark on others, at scale, and consistent with their values.
+Not chasing salaries, titles, accolades, promotions or quick social validation — but striving to create and leave a positive mark on others, at scale, and consistent with their values.
 
 - **They all stubbornly believe that they can.**  
 A quiet, stubborn certainty that your ideas, your voice, and your work have value — even when no one else validates it yet.  The Moroccan word *jebha* comes to mind. Having the *jebha* (the stubborn forehead, the resolve) is essential — but it only matters if it is backed by hard work, humility, and a desire to create, not just to compete, or pretend.
