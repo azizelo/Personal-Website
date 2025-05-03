@@ -56,13 +56,17 @@ const posts = await getCollection('blog');
   <section id="founders" class="snap-start relative min-h-screen px-4 py-28 bg-white border-t border-[#e4e0db]">
     <div class="prose prose-neutral max-w-prose mx-auto space-y-6 text-base sm:text-lg leading-relaxed">
       <h2 class="text-2xl sm:text-3xl font-bold text-center mb-6">For Founders & Builders</h2>
-      <p>I love optimizing and scaling large products as well as working with early-stage founders and product teams who
-        are building bold, meaningful solutions.</p>
-      <p>I bring experience across deep tech, scaled systems, and startup execution. If you're building something that
-        blends innovation with sustainable social impact, let's connect. I’m especially drawn
-        to ventures that adapt technology and innovation to emerging and underserved markets — particularly across
-        Morocco, Africa, and
-        the Middle East.</p>
+      <p>I love creating innovative solutions, that leverage the latest technologies, to solve the World's most
+        meaningful and complex problems.
+
+        I’m passionate about working with founders and builders who are not afraid to take risks, embrace uncertainty,
+        and challenge the status quo. I believe that the best products are built by teams that are not only technically
+        skilled but also deeply empathetic to their users’ needs.</p>
+      <p>My goal is to help founders and builders navigate the complexities of product development, from ideation to
+        execution. I’m here to share my experience, insights, network, and capital to help you succeed in your journey.
+        I’m particularly interested in working with early-stage startups that are focused on building products that have
+        a positive impact on society at large, Morocco and Africa in particular.</p>
+      <p>If this resonates with you, let's connect.</p>
     </div>
     <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10 px-4">
       <a href="https://www.linkedin.com/in/elouaqid/" target="_blank" rel="noopener noreferrer"
@@ -94,12 +98,21 @@ const posts = await getCollection('blog');
         <p>My only goal is to contribute with intention. And if even one post helps someone take their next step with
           confidence, then it’s already worth it.</p>
       </div>
+      <h3 class="text-center text-lg font-semibold mb-4">Get New Posts by Email</h3>
+
+      <div class="flex justify-center">
+        <iframe src="https://azizelo.substack.com/embed" width="400" height="220"
+          style="border: none; background: transparent;" frameborder="0" scrolling="no">
+        </iframe>
+      </div>
+
+
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 text-left pt-8">
         {posts.length > 0 ? (
         posts.map(post => (
-        <a href={`/blog/${post.slug}`}
-          class="border rounded-lg p-4 bg-white shadow-sm hover:shadow-md transition-all block">
+        <a href={`${import.meta.env.BASE_URL}blog/${post.slug}`}
+          class="border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-all block text-left">
           <h3 class="font-semibold text-lg mb-2">{post.data.title}</h3>
           <p class="text-sm text-gray-600">{post.data.description}</p>
         </a>
@@ -111,11 +124,13 @@ const posts = await getCollection('blog');
         )}
       </div>
 
+
     </div>
     <a href="#mentoring"
       class="absolute bottom-6 left-0 w-full flex justify-center text-sm text-gray-500 hover:text-[#2D3142] animate-bounce z-10">▼
       Let's Connect</a>
   </section>
+
 
   <!-- Mentorship Section -->
   <section id="mentoring" class="snap-start relative min-h-screen px-4 py-28 bg-white border-t border-[#e4e0db]">

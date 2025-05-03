@@ -1,32 +1,55 @@
 ---
-import { getEntryBySlug, getCollection } from 'astro:content';
+import { getCollection, getEntryBySlug } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
 const posts = await getCollection('blog');
-return posts.map((post) => ({
-params: { slug: post.slug }
+return posts.map(post => ({
+params: { slug: post.slug }, // flat slug only!
 }));
 }
 
 const { slug } = Astro.params;
 const post = await getEntryBySlug('blog', slug);
-
 if (!post) {
 throw new Error(`Post not found for slug: ${slug}`);
 }
-
-
 const { Content } = await post.render();
-const { title, description } = post.data;
+const { title, description, pubDate, author, coverImage } = post.data;
+const publishedDate = new Date(post.data.pubDate);
+console.log('pubDate raw:', post.data.pubDate);
+
 ---
 
-<Layout title={title} showHeaderOverlay={false} immersive={false} enableHeaderTransition={false}>
 
-    <article class="prose prose-lg max-w-3xl mx-auto px-4 pt-28 pb-16 text-[#2D3142]">
 
-        <h1 class="text-3xl font-bold mb-4">{title}</h1>
-        <p class="text-gray-600 mb-8">{description}</p>
-        <Content />
+<Layout title={title} showHeaderOverlay={false}>
+    <article class="prose prose-neutral max-w-3xl mx-auto px-4 py-28 text-[#2D3142]">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-4">{title}</h1>
+            <p class="text-gray-600 text-base sm:text-lg">{description}</p>
+            <div class="mt-6 text-sm text-gray-400">
+                <p class="text-sm text-gray-400">
+                    {author && `${author} · `}
+                    {isNaN(publishedDate.getTime()) ? 'Date unavailable' : `Published on
+                    ${publishedDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                    })}`}
+                </p>
+
+            </div>
+        </header>
+
+        {coverImage && (
+        <img src={`${import.meta.env.BASE_URL}${coverImage.startsWith('/') ? coverImage.slice(1) : coverImage}`}
+            alt={title} class="rounded-xl w-full max-h-[500px] object-cover mt-10 shadow-md" loading="lazy" />
+
+        )}
+
+        <div class="mt-10">
+            <Content />
+        </div>
     </article>
 </Layout>
