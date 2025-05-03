@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>You&#39;re World Class!</title><!-- Open Graph / Facebook --><meta property="og:title" content="Aziz El Ouaqid — Technologist. Builder. Advisor."><meta property="og:description" content="Blending deep tech and human insight to support innovation, mentorship, and meaningful impact.."><meta property="og:image" content="/Personal-Website/og-image.png"><meta property="og:url" content="https://azizelo.github.io/personal-site/"><meta property="og:type" content="website"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Aziz El Ouaqid — Technologist. Builder. Advisor."><meta name="twitter:description" content="Blending deep tech and human insight to support innovation, mentorship, and meaningful impact."><meta name="twitter:image" content="/Personal-Website/og-image.png"><link rel="icon" href="/Personal-Website/favicon.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/Personal-Website/_astro/_slug_.QTdiedIc.css"></head> <body class="scroll-smooth snap-y snap-proximity bg-[#FAF7F2] font-sans text-[#2D3142] overflow-x-hidden"> <header id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-4 py-3 text-[#2D3142] bg-white shadow-sm"> <div class="flex items-center justify-between w-full max-w-7xl mx-auto"> <!-- Logo and Tagline --> <div class="flex items-center gap-4"> <a href="/Personal-Website/#top" class="flex items-center gap-2"> <img src="/Personal-Website/elouaqid-logo.png" alt="Logo" class="h-10 w-auto object-contain"> <div> <h1 class="text-lg sm:text-xl font-bold">Aziz El Ouaqid</h1> <p class="text-xs sm:text-sm opacity-80">Technologist. Builder. Advisor.</p> </div> </a> </div> <!-- Desktop Nav --> <nav class="hidden sm:flex gap-6 text-sm font-medium ml-auto"> <a href="/Personal-Website/#top" class="hover:text-yellow-600 transition">Home</a> <a href="/Personal-Website/#about" class="hover:text-yellow-600 transition">About</a> <a href="/Personal-Website/#founders" class="hover:text-yellow-600 transition">Founders</a> <a href="/Personal-Website/#blog" class="hover:text-yellow-600 transition">Blog</a> <a href="/Personal-Website/#mentoring" class="hover:text-yellow-600 transition">Mentoring</a> </nav> <!-- Mobile Hamburger --> <button id="menu-toggle" class="sm:hidden text-3xl ml-auto focus:outline-none">☰</button> </div> <!-- Mobile Nav Menu --> <div id="mobile-menu" class="sm:hidden hidden flex flex-col gap-4 text-sm font-medium px-4 py-6 mt-2 bg-white/90 backdrop-blur-md text-[#2D3142] shadow-md rounded-lg"> <a href="/Personal-Website/#top" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a> <a href="/Personal-Website/#about" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a> <a href="/Personal-Website/#founders" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Founders</a> <a href="/Personal-Website/#blog" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Blog</a> <a href="/Personal-Website/#mentoring" class="block hover:text-yellow-600" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Mentoring</a> </div> <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const header = document.getElementById('site-header');
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (!entry.isIntersecting) {
+                        header.classList.add('backdrop-blur-md', 'bg-white/10');
+                        header.classList.remove('text-white');
+                    } else {
+                        header.classList.remove('backdrop-blur-md', 'bg-white/10');
+                        header.classList.add('text-white');
+                    }
+                },
+                { threshold: 0.1 }
+            );
+
+            const hero = document.getElementById('top');
+            if (hero) observer.observe(hero);
+
+            const toggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('mobile-menu');
+            toggle?.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script> </header> <main>  <article class="prose prose-neutral max-w-3xl mx-auto px-4 py-28 text-[#2D3142]"> <header class="mb-10 text-center"> <h1 class="text-4xl sm:text-5xl font-bold mb-4">You&#39;re World Class!</h1> <p class="text-gray-600 text-base sm:text-lg">To AUI students, recent grads and future Moroccan builders. Reflecting on belonging, ambition, and the journey from Morocco to the world.</p> <div class="mt-6 text-sm text-gray-400"> <p class="text-sm text-gray-400"> Aziz El Ouaqid ·  Published on
+                    April 26, 2025 </p> </div> </header> <img src="/Personal-Website/images/blog/swim.jpeg" alt="You're World Class!" class="rounded-xl w-full max-h-[500px] object-cover mt-10 shadow-md" loading="lazy"> <div class="mt-10"> <p><strong>Why I Am Writing This?</strong></p>
+<p>It’s taken me a long time to write this — longer than I ever intended.</p>
+<p>Nearly 25 years have passed since I graduated. Life, career, and family took over.</p>
+<p>But now, as I support my daughter as she begins her own college journey, I find myself reflecting deeply on my own time attending school in Morocco — and the foundation it gave me.</p>
+<p>After spending nearly half a lifetime working in technology — building products, leading teams, and solving complex problems — a few truths stand out clearly that I thought I would share.</p>
+<p><strong>The Privilege You Have</strong></p>
+<p>First, if you have access to, or have graduated from AUI, or any other Moroccan institution, you carry a privilege.</p>
+<p>It is not just about beautiful grounds or facilities.</p>
+<p>The true greatness of a university lies in its people — its students, its staff, its faculty, and their unwavering commitment to education.</p>
+<p>When I look back at my time at Al Akhawayn University, I realize how many of my professors were passionate, deeply patriotic Moroccans.</p>
+<p>Many of them had the credentials and opportunities to build careers abroad, yet they chose to invest their talents at home — in us, in Morocco’s future.</p>
+<p>Today, after working side by side with graduates and PhDs from Harvard, MIT, Stanford, and hunderds of other top tier universities in the World, I can say this with full conviction:</p>
+<blockquote>
+<p><strong>You have every bit as much potential to positively impact the World as any of your global peers — You do not need additional credentials.</strong></p>
+</blockquote>
+<p>Early in my career, I used to be intimidated by graduates from elite institutions.  They seemed to be conditioned to believe they are among the best — and that belief often becomes a powerful, self-fulfilling prophecy.  In our Moroccan culture, this may come across as pretentious or even as arrogance.</p>
+<p>But there is difference between arrogance and confidence. The confidence of walking into any room and assuming that you belong, assuming that you can lead, and assuming that you can change the world, while remaining humble.</p>
+<p>At AUI, you are fortunate to come from an institution that has established itself with distinction in Morocco and across Africa — a place that champions global thinking, critical inquiry, and leadership.</p>
+<blockquote>
+<p><strong>That foundation is enough. It is more than enough.</strong></p>
+</blockquote>
+<p>When you carry forward your curiosity, resilience, and hard-earned skills, you should walk into any global arena with the same conviction and confidence as your peers from the world’s most prestigious institutions — knowing that your voice, your ideas, and your work belong there.</p>
+<p><strong>Potential Alone Is Not Engough</strong></p>
+<p>Three qualities have stood out to me across all the people I’ve admired and worked with:</p>
+<ul>
+<li>
+<p><strong>They all aspire to build things greater than themselves.</strong><br>
+Not chasing salaries, titles, accolades, promotions or quick social validation — but striving to create work that leaves a positive mark on others, at scale, and consistent with their values.</p>
+</li>
+<li>
+<p><strong>They all stubbornly believe that they can.</strong><br>
+A quiet, stubborn certainty that your ideas, your voice, and your work have value — even when no one else validates it yet.  The Moroccan word <em>jebha</em> comes to mind. Having the <em>jebha</em> (the stubborn forehead, the resolve) is essential — but it only matters if it is backed by hard work, humility, and a desire to create, not just to compete, or pretend.</p>
+</li>
+<li>
+<p><strong>They all pocess the curiosity, grit, and perseverance to make it real.</strong><br>
+The discipline to show up when it’s hard, to keep building when it’s thankless, to keep learning and fail fast, and to endure long enough to turn conviction into contribution.</p>
+</li>
+</ul>
+<p>Curiosity, grit, perseverance, humility, and purpose.  These are some of the fundamental ingredients for the magic to happen.</p>
+<p><strong>It Won’t Be Easy</strong></p>
+<p>Opportunities might not always appear as quickly to you as they do to others.</p>
+<p>And that’s okay — everyone is on their own time.</p>
+<p>Control what you can control.</p>
+<p>If you had a false start, tomorrow is a new day.</p>
+<p>Work relentlessly to add value to the world around you: with discipline, with patience, and with kindness.</p>
+<p>If you stay the course, doors will open at the right time, often in ways you might not expect.</p>
+<p>Some of you may already know this truth through your spiritual growth — through learning to accept what is beyond our control while giving your best to what is within it.</p>
+<hr>
+<p>To all of you — students, graduates, and future builders — as I tell my daughters:</p>
+<p><strong>You belong. You matter.</strong></p>
+<p><strong>And you are capable of far more than you know.</strong></p>
+<p>Sincerely,<br>
+Aziz El Ouaqid -</p> </div> </article>  </main> <footer class="w-full text-center text-sm text-gray-500 py-6 bg-transparent">
+© 2025 El Ouaqid. All rights reserved.
+</footer> <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              navLinks.forEach(link => {
+                link.classList.toggle('text-yellow-600', link.getAttribute('href') === `#${entry.target.id}`);
+              });
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      sections.forEach(section => observer.observe(section));
+    });
+  </script> <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"> <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script> </body> </html>
