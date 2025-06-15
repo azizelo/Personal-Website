@@ -47,7 +47,7 @@ At AUI, you are fortunate to come from an institution that has established itsel
 
 When you carry forward your curiosity, resilience, and hard-earned skills, you should walk into any global arena with the same conviction and confidence as your peers from the world’s most prestigious institutions — knowing that your voice, your ideas, and your work belong there.
 
-**Potential Alone Is Not Engough**
+**Potential Alone Is Not Enough**
 
 Three qualities have stood out to me across all the people I've admired and worked with:
 
@@ -57,7 +57,7 @@ Not chasing salaries, titles, accolades, promotions or quick social validation �
 - **They all stubbornly believe that they can.**  
 A quiet, stubborn certainty that your ideas, your voice, and your work have value — even when no one else validates it yet.  The Moroccan word *jebha* comes to mind. Having the *jebha* (the stubborn forehead, the resolve) is essential — but it only matters if it is backed by hard work, humility, and a desire to create, not just to compete, or pretend.
 
-- **They all pocess the curiosity, grit, and perseverance to make it real.**  
+- **They all possess the curiosity, grit, and perseverance to make it real.**
 The discipline to show up when it's hard, to keep building when it's thankless, to keep learning and fail fast, and to endure long enough to turn conviction into contribution.
 
 Curiosity, grit, perseverance, humility, and purpose.  These are some of the fundamental ingredients for the magic to happen.
