@@ -110,7 +110,7 @@ const posts = await getCollection('blog');
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2 text-left pt-8">
         {posts.length > 0 ? (
         posts.map(post => (
-        <a href={`${import.meta.env.BASE_URL}blog/${post.slug}`}
+        <a href={`${import.meta.env.BASE_URL}blog/${post.id}`}
           class="border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-all block text-left">
           <h3 class="font-semibold text-lg mb-2">{post.data.title}</h3>
           <p class="text-sm text-gray-600">{post.data.description}</p>

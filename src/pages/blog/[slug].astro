@@ -1,22 +1,22 @@
 ---
-import { getCollection, getEntryBySlug } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
 const posts = await getCollection('blog');
 return posts.map(post => ({
-params: { slug: post.slug },
+params: { slug: post.id },
 }));
 }
 
 const { slug } = Astro.params;
-const post = await getEntryBySlug('blog', slug);
+const post = await getEntry('blog', slug);
 if (!post) {
 throw new Error(`Post not found for slug: ${slug}`);
 }
-const { Content } = await post.render();
+const { Content } = await render(post);
 const { title, description, pubDate, author, coverImage } = post.data;
-const fullUrl = `${import.meta.env.SITE}/blog/${post.slug}`;
+const fullUrl = `${import.meta.env.SITE}/blog/${post.id}`;
 const imageUrl = `${import.meta.env.BASE_URL}${coverImage}`;
 const publishedDate = new Date(post.data.pubDate);
 console.log('pubDate raw:', post.data.pubDate);
