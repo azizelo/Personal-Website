@@ -9,9 +9,8 @@
     "deploy": "astro build && powershell -Command \"New-Item -Path dist/.nojekyll -ItemType File -Force\" && npx gh-pages -d dist --dotfiles"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/vite": "^4.1.3",
-    "astro": "^5.7.10"
+    "astro": "^6.3.7"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
